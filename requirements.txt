@@ -1,0 +1,18 @@
+# Multicolor flow cytometry analysis notebook — tested versions (Python 3.10)
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+statsmodels==0.14.6
+matplotlib==3.10.8
+# flow cytometry I/O & transforms
+fcsparser==0.2.8        # ships the real BD LSR II sample (used only for its file path)
+flowio==1.4.0           # FCS read/write (NumPy-2 safe; primary reader in the notebook)
+flowutils==1.2.2        # logicle / hyperlog transforms
+# clustering / embedding
+minisom==2.3.6          # FlowSOM-style self-organizing map
+igraph==1.0.0           # (a.k.a. python-igraph) graph backend for Leiden
+leidenalg==0.12.0       # Leiden community detection
+# optional, only for re-exporting the notebook to HTML
+nbformat==5.10.4
+markdown==3.10.2
